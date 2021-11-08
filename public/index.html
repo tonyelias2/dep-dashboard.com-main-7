@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .yellow{
+                color: #fff33f;
+            }
+            ul{
+                height: 100%;
+            }
+            .weatherInformer18{
+                background: transparent !important;
+                border: 0 !important;
+            }
+            .weatherInformer18 ul li.weatherInformer18-week .weatherInformer18-week__table td{
+                color: white;
+            }
+            .weatherInformer18-week__data{
+                color: black !important;
+            }
+            .weatherInformer18 ul li.weatherInformer18-city{
+                font-size: 20px !important;
+                line-height: 35px;
+                color: #fff33f;
+            }
+            .weatherInformer18-week{
+                height: 115px;
+            }
+            .clocks{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+            h2{
+                color: white;
+            }
+            .centered-container{
+                max-width: 1600px;
+                margin: auto;
+                width: 100%;
+            }
+            .ww-informers-box-854754{
+                -webkit-animation-name:ww-informers54;
+                animation-name:ww-informers54;
+                -webkit-animation-duration:1.5s;
+                animation-duration:1.5s;
+                white-space:nowrap;
+                overflow:hidden;
+                -o-text-overflow:ellipsis;
+                text-overflow:ellipsis;
+                font-size:12px;
+                font-family:Arial;
+                line-height:18px;
+                text-align:center
+            }
+            .ww-informers-box-854753{
+                width: calc((100% - 100px) / 2);
+            }
+            .weather{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+            @-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+            @keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+            .input{
+                min-width: 300px;
+                max-width: 500px;
+            }
+           
+            .button{
+                background: white;
+                border: 0;
+                border-radius: 0;
+            }
+            .video-container{
+                margin-top: 50px;
+            }
+
+        </style>
+        
+        <!-- <script src="script.js"></script> -->
+       
+    </head>
+
+    <body>
+        <div id="login-container">
+            <form id="login-form" class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" id="email" placeholder="Enter Email Here">
+                <input type="password" id="password" name="password" placeholder="Enter Password here">
+                <button class="btnn" type="submit" id="login-btn">Login</button>
+            </form>
+        </div>
+        
+
+        <div class="centered-container" id="home-container">
+        
+            <div class="gcse-search"></div>
+        
+            <div class="main">
+                <div class="icon">
+                    <h2> Design <span class="yellow">Engineering</span> <br> Partners</h2>
+                    <button class="log-out" id="logout-btn">Log Out</button>
+        
+                </div>
+                <div class="navbar">
+        
+                    <div class="menu">
+                        <ul class="header-menu">
+        
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="tvs.html">Live TVs</a></li>
+                            <li><a href="cities.html">Live Cities</a></li>
+                            <li><a href="excel.html">Excel</a></li>
+                            <li><a href="widget.html">Widget</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="recipe.html">Food Recipe</a></li>
+                            <li><a href="joke.html">Jokes</a></li>
+                            <li><a href="indexx.html">Weather Forecast</a></li>
+                            <li><a href="music.html">Live Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clocks">
+                    <div class="clockl">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/276781">
+                                    Beirut, Lebanon
+                                </a>
+                            </h4>
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FBeirut"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="clocke">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/4257227">Evansville,
+                                    United States</a>
+                            </h4>
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FChicago"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="clockt">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/6167865">Toronto,
+                                    Canada</a>
+                            </h4>
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FToronto"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="clockp">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow ;" href="https://www.zeitverschiebung.net/en/city/2988507">Paris,
+                                    France</a>
+                            </h4>
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FParis"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather">
+                    <div id="cbc71ebc85e2c692e5da13d1b1d9f7d5" class="ww-informers-box-854753">
+                        <p class="ww-informers-box-854754">
+                            <a
+                                href="https://world-weather.info/forecast/lebanon/beyrouth/month/">world-weather.info/forecast/lebanon/beyrouth/month/</a>
+                            <a href="https://world-weather.info/forecast/usa/boyce/">world-weather.info</a>
+                        </p>
+                    </div>
+                    <div id="3eeee1ec41629c58cc3ed6e2c2709814" class="ww-informers-box-854753">
+                        <p class="ww-informers-box-854754">
+                            <a href="https://world-weather.info/forecast/usa/evansville/">Weather in Evansville</a>
+                            <a href="https://world-weather.info/forecast/usa/memphis/">Weather in Memphis</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-condition">
+                <h4 style="color: white;">Set your temperature condition</h4>
+                <input type="text" id="temperature-condition" placeholder="25"/>
+                <button type="button" onclick="setCondition()">Set Condition</button>
+            </div>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="firebase.js"></script>
+        <script src="scripts/auth.js"></script>
+        <script src="index.js"></script>
+        <script async type="text/javascript" charset="utf-8"
+            src="https://world-weather.info/wwinformer.php?userid=3eeee1ec41629c58cc3ed6e2c2709814"></script>
+        <script async type="text/javascript" charset="utf-8"
+            src="https://world-weather.info/wwinformer.php?userid=cbc71ebc85e2c692e5da13d1b1d9f7d5"></script>
+        <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
+    </body>
+
+</html>

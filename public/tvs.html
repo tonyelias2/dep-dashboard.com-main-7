@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Live TVs</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+           
+            .input{
+                min-width: 300px;
+                max-width: 500px;
+            }
+           
+            .button{
+                background: white;
+                border: 0;
+                border-radius: 0;
+            }
+            .video-container{
+                margin-top: 50px;
+            }
+
+        </style>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="centered-container">
+            <div class="gcse-search"></div>
+        
+            <div class="main">
+                <div class="icon">
+                    <h2> Design <span class="yellow">Engineering</span> Partners</h2>
+                    <div class="weather-widget">
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
+                            data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5" data-theme="orange"
+                            data-basecolor="#fff33f">Lebanon Weather
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="menu">
+                        <ul class="header-menu">
+                            
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="tvs.html">Live TVs</a></li>
+                            <li><a href="cities.html">Live Cities</a></li>
+                            <li><a href="excel.html">Excel</a></li>
+                            <li><a href="widget.html">Widget</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="recipe.html">Food Recipe</a></li>
+                            <li><a href="joke.html">Jokes</a></li>                          
+                            <li><a href="indexx.html">Weather Forecast</a></li>
+                            <li><a href="music.html">Live Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="youtube-search">
+                    <div id="buttons">
+                        <label> 
+                            <input id="query" value='MBC' type="text" />
+                            <button id="search-button" onclick="keyWordsearch()">Search</button>
+                        </label>
+                        <div id="container">
+                            <h1>Search Results</h1>
+                            <ul id="results"></ul>
+                        </div>
+                    </div>
+                    <form id="myForm" action="/dep-dashboard.com-main/home.html">
+                        <p style="margin-bottom: 10px;">
+                            Add video:
+                        </p>
+                        <input class="input" type="text" id="url" placeholder="Please Insert The Embedded Code Here"><br>
+                        <input type="button" class="input button" onclick="myFunction()" value="Add Video">
+                    </form>
+                </div>
+               
+        
+                <div class="video-container flex-container flex-start">
+                    <div id="myId1" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId1')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/sPgqEHsONK8?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <div id="myId2" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId2')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/-upyPouRrB8?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+        
+                    <div id="myId3" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId3')">X</span>
+                        <iframe width="100%" height="280"
+                            src="https://www.youtube.com/embed/XWq5kBlakcQ?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+        
+                    <div id="myId4" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId4')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/lRjOKEF_Ynw?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div id="myId5" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId5')">X</span>
+                        <iframe width="100%" height="280"
+                            src="https://www.youtube.com/embed/xtoOK86mW8Y?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+        
+                    <div id="myId6" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId6')">X</span>
+                        <iframe width="100%" height="280"
+                            src="https://www.youtube.com/embed/CV5Fooi8YJA?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div id="myId7" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId7')">X</span>
+                        <iframe width="100%" height="280"
+                            src="https://www.youtube.com/embed/mg7FweYjasE?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div id="myId8" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId8')">X</span>
+                        <iframe width="100%" height="280"
+                            src="https://www.youtube.com/embed/nA9UZF-SZoQ?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                
+                    <div id="myId9" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId9')">X</span>
+                        <iframe width="100%" height="280"
+                            src="https://www.youtube.com/embed/6x7lV6E32lA?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+        
+                    <div id="myId10" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId10')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/9Auq9mYxFEE??rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <div id="myId11" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId11')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/CV5Fooi8YJA?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" player
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div id="myId12" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId12')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/0Y-IRcUJi6o?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>   
+                    <div class="video" id="user-video">
+                        <span id="x" class="close-x" onclick="removeVideo('user-video')">X</span>
+
+                        <!-- <iframe id="myIframe" width="100%" height="280" frameborder="0" seamless></iframe> -->
+                    </div>
+                </div>             
+            </div>
+        </div>
+       
+        <script src="tv.js"></script>
+        <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">   </script>
+    </body>
+
+</html>

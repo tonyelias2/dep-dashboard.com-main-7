@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "staging": "dep-web-68a5a",
+    "default": "dep-web-68a5a"
+  },
+  "targets": {}
+}
